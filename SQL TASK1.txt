@@ -1,0 +1,23 @@
+ Task 1
+
+1. CREATE DATABASE Students_Record
+2. Create Table Students_info(Student_ID int Unique not null, Gender varchar, Name varchar(50), Age int, Subjects varchar not null);
+3. Create Table Health_records(Student_ID int Unique not null, Blood_Group varchar, Height nvarchar, Weight int);
+4. Create Table Performance(Student_ID int Unique not null, Score varchar default 0, Grade nvarchar);
+5. EXEC sp_rename 'dbo.Students_info.Subjects', 'Course', 'COLUMN';
+6. Alter Table Students_info Drop column Age;
+
+Task 2
+1. Select * From Employee 
+   Where city = 'Mumbai' or city = 'Delhi';
+2.SELECT * FROM Employee
+  WHERE fname LIKE '%a%' AND fname LIKE '%e%';
+3.SELECT * FROM Employee
+  Where date_of_birth >= '1990-01-01';
+4. SELECT * FROM Salary
+   WHERE Base < 1000000
+   ORDER BY Base ASC;
+
+Task 3
+1. SELECT COUNT (*) As Count_of_employee
+   FROM Employee
